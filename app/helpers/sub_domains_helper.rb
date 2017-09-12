@@ -1,0 +1,2 @@
+module SubDomainsHelper
+end

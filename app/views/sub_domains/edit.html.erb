@@ -1,0 +1,46 @@
+<% provide(:title, @subdomain.sname) %>
+		
+		
+		
+	<!--	<div class="am-g">-->
+		<!-- ============================================================== -->
+		<!-- Start right Content here -->
+		<div class="content-page">
+			<!-- Start content -->
+			<div class="content">
+				<div class="am-g">
+					<!-- Row start -->
+                    <div class="am-u-sm-12">
+				    <div class="card-box">
+                    <%= render 'shared/error_messages', object: @subdomain %>
+                    <div class="am-modal-bd">
+                        <%= form_for @subdomain, html: {class: "am-form am-form-horizontal"} do |f| %>
+
+                            <div class="am-form-group">
+                            <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">子域名</label>
+                            <div class="am-u-sm-10">
+                            <%= f.text_field :sname, id: "doc-ipt-3", placeholder: "输入你的域名" %>
+                            </div>
+                            </div>
+
+                            <div class="am-form-group">
+                            <label for="doc-ipt-2" class="am-u-sm-2 am-form-label">子域名IP</label>
+                            <div class="am-u-sm-10">
+                            <%= f.text_field :sip, id: "doc-ipt-2", placeholder: "输入你的域名IP" %>
+                            </div>
+                            </div>
+                            
+                            <button type="submit" class="am-btn am-btn-default">提交</button>
+                             
+            <% end %>
+
+                     </div>
+                    </div>
+                    </div>
+					<!-- Row end -->
+				</div>
+			
+			
+			</div>
+		</div>
+		<!-- end right Content here -->

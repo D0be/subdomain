@@ -1,0 +1,2 @@
+class ChangePasswordDigestFieldForUser < ApplicationRecord
+end

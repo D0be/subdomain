@@ -1,0 +1,5 @@
+thread_num: 20
+max_level: 2
+nsfile: ../../vendor/dns_servers.txt
+subdomainfile: ../../vendor/subnames.txt
+nextdomainfile: ../../vendor/next_sub.txt

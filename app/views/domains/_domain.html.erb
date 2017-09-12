@@ -1,0 +1,20 @@
+<tr>
+<td><%= domain.id %></td>
+<td><%= domain.dtitle %></td>
+<td><%= link_to domain.dname, domain %></td>
+<td class="am-hide-sm-only"><%= domain.dip %></td>
+<td class="am-hide-sm-only"><%= domain.updated_at %></td>
+<td>
+    <div class="am-btn-toolbar">
+    <div class="am-btn-group am-btn-group-xs">
+        <%= link_to edit_domain_path(domain) do %>
+            <button type="button" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
+        <% end %>
+        <button type="button" class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
+        <%= link_to domain, method: :delete, data: { confirm: "ARE YOU OK?" } do %>
+        <button type="button" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
+        <% end %>
+    </div>
+    </div>
+</td>
+</tr>
